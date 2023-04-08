@@ -34,7 +34,7 @@ let tl = gsap
   })
   .to({}, { duration: 1 / (section.length + 1) });
 
-  ScrollTrigger.saveStyles(".section-2, .section-3, .main-wrapper");
+  ScrollTrigger.saveStyles(".section-2, .section-3, .main-section");
 
 
 
