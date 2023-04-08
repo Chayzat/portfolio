@@ -95,18 +95,17 @@ a {
 }
 
 .home-content__name {
-  font-size: 150px;
+  font-size: clamp(5rem, 3.75rem + 6.25vw, 9.375rem);
   font-family: m;
 }
 
 .home-contact {
   display: flex;
   padding-top: 0.5rem;
-  gap: 5rem;
+  /* gap: 5rem; */
+  gap: clamp(2rem, 1.143rem + 4.29vw, 5rem);
 }
 
-.home-contact__item {
-}
 .home-contact__link {
   font-size: 1.5rem;
   transition: 0.3s ease;
@@ -118,7 +117,8 @@ a {
   position: absolute;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  font-size: 12px;
+  letter-spacing: clamp(0.188rem, 0.063rem + 0.63vw, 0.625rem);
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
