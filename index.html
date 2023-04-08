@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -13,73 +14,174 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <div class="main-wrapper">
-      <section class="section-1">
-        <div class="box0">
-            <div class="image-gallery">
-                <div class="col col-1">
-                    <img src="./img/dark.jpg" alt="col1">
-                    <img src="./img/001.jpg" alt="col1">
-                    <img src="./img/dark.jpg" alt="col1">
-                    <img src="./img/107.jpg" alt="col1">
-                    <img src="./img/dark.jpg" alt="col1">
-                </div>
-            </div>
+    <main class="main-section">
+      <section class="home-section section">
+        <div class="home-gallery">
+          <div class="col">
+            <img src="./img/001.jpg" alt="home gallery image" />
+            <img src="./img/dark.jpg" alt="home gallery image" />
+            <img src="./img/107.jpg" alt="home gallery image" />
+          </div>
         </div>
-        <div class="box1">
-            <div class="name">ocm.</div>
+        <div class="home-content center">
+          <div class="home-content__name">ocm.</div>
+          <ul class="home-contact">
+            <li class="home-contact__item">
+                <a href="#" class="home-contact__link">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+            <li class="home-contact__item">
+                <a href="#" class="home-contact__link">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+            </li>
+            <li class="home-contact__item">
+                <a href="#" class="home-contact__link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="home-contact__item">
+                <a href="#" class="home-contact__link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+          </ul>
         </div>
-        <div class="box2">
-            <div class="image-gallery">
-                <div class="col col-1">
-                    <img src="./img/dark.jpg" alt="col1">
-                    <img src="./img/02.jpg" alt="col1">
-                    <img src="./img/dark.jpg" alt="col1">
-                    <img src="./img/103.jpg" alt="col1">
-                    <img src="./img/dark.jpg" alt="col1">
-                </div>
-            </div>
+        <div class="home-gallery">
+          <div class="col">
+            <img src="./img/02.jpg" alt="home gallery image" />
+            <img src="./img/dark.jpg" alt="home gallery image" />
+            <img src="./img/103.jpg" alt="home gallery image" />
+          </div>
+        </div>
+        <div class="home-content__scroll">
+            <a href="#" class="scroll">scroll to discover</a>
         </div>
       </section>
-      <section class="section-2">
+      <section class="about-section section">
         <div class="wrapper">
-            <div class="left">
-                <div class="line-1">
-                    <p>ABOUT ME</p>
-                </div>
-
-                <div class="image-wrapper">
-                    <img src="./img/team.jpg" alt="">
-                </div>
-
-                <div class="line-2">
-                    <p>STACK</p>
-                    <div class="animate-text">
-                        <span>JavaScrip TypeScript ReactJS HTML CSS SASS</span>
-                    </div>
-                    <!-- discover projects -->
-                </div>
+          <div class="left">
+            <div class="line-1">
+              <p>#ABOUT ME</p>
             </div>
-            <div class="right">
 
-                <div class="img-container">
-                    <img src="./img/code.jpg" alt="">
-                </div>
+            <div class="">
+              <p>Frontend Developer</p>
+              <p>Chayzat Oorzhak</p>
+              <p>
+                I'm developing a responsive website that brings the design of a
+                site to life.
+              </p>
             </div>
+
+            <div class="image-wrapper">
+              <img src="./img/main.jpg" alt="" />
+            </div>
+
+            <div class="line-2">
+              <p>STACK</p>
+              <div class="animate-text">
+                <span>JavaScrip TypeScript ReactJS HTML CSS SASS</span>
+              </div>
+              <p>explore projects</p>
+              <!-- discover projects -->
+            </div>
+          </div>
         </div>
-    </section>
-    </div>
+      </section>
 
-    <section class="section-3">
+    </main>
+
+    <section class="project-section section">
         <div class="rows">
-            <h1 style="text-align: center;">ЗДЕСЬ ДОЛЖНЫ БЫТЬ *ТИПА ПРОЕКТЫ*</h1>
+          <div class="swiper mySwiper row container">
+            <div class="swiper-pagination row"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide row">
+                <div class="swiper-content">
+                  <h1>Johnnie walker black label</h1>
+                  <p>
+                    Johnnie walker black label Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos mollitia eos ratione
+                    omnis nesciunt explicabo ab cumque, dicta magnam! Rerum.
+                  </p>
+                  <a href="#" class="page-btn">Add top cart</a>
+                </div>
+                <div class="swiper-img row">
+                  <img src="./img/01.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide row">
+                <div class="swiper-content">
+                  <h1>Johnnie walker black label</h1>
+                  <p>
+                    Johnnie walker black label Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos mollitia eos ratione
+                    omnis nesciunt explicabo ab cumque, dicta magnam! Rerum.
+                  </p>
+                  <a href="#" class="page-btn">Add top cart</a>
+                </div>
+                <div class="swiper-img row">
+                  <img src="./img/103.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide row">
+                <div class="swiper-content">
+                  <h1>Johnnie walker black label</h1>
+                  <p>
+                    Johnnie walker black label Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos mollitia eos ratione
+                    omnis nesciunt explicabo ab cumque, dicta magnam! Rerum.
+                  </p>
+                  <a href="#" class="page-btn">Add top cart</a>
+                </div>
+                <div class="swiper-img row">
+                  <img src="./img/103.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide row">
+                <div class="swiper-content">
+                  <h1>Johnnie walker black label</h1>
+                  <p>
+                    Johnnie walker black label Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos mollitia eos ratione
+                    omnis nesciunt explicabo ab cumque, dicta magnam! Rerum.
+                  </p>
+                  <a href="#" class="page-btn">Add top cart</a>
+                </div>
+                <div class="swiper-img row">
+                  <img src="./img/103.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide row">
+                <div class="swiper-content">
+                  <h1>Johnnie walker black label</h1>
+                  <p>
+                    Johnnie walker black label Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos mollitia eos ratione
+                    omnis nesciunt explicabo ab cumque, dicta magnam! Rerum.
+                  </p>
+                  <a href="#" class="page-btn">Add top cart</a>
+                </div>
+                <div class="swiper-img row">
+                  <img src="./img/103.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
