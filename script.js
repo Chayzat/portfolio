@@ -1,5 +1,17 @@
-let container = document.querySelector(".main-wrapper");
-let section = container.querySelectorAll("section");
+let container = document.querySelector(".main-section");
+let section = container.querySelectorAll(".section");
+
+var swiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  }
+})
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +27,7 @@ let tl = gsap
   })
   .to(container, {
     x: () =>
-      -(container.scrollWidth - document.documentElement.clientWidth - 95) +
+      -(container.scrollWidth - document.documentElement.clientWidth - 85) +
       "px",
     ease: "none",
     duration: 1,
@@ -23,4 +35,6 @@ let tl = gsap
   .to({}, { duration: 1 / (section.length + 1) });
 
   ScrollTrigger.saveStyles(".section-2, .section-3, .main-wrapper");
+
+
 
