@@ -289,11 +289,11 @@ p {
 }
 
 @media (max-width: 978px) {
-  .image-gallery {
+  .home-gallery {
     display: none;
   }
 
-  .section-2 {
+  .about-section {
     transform: translate(10%);
   }
 }
