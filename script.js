@@ -27,14 +27,14 @@ let tl = gsap
   })
   .to(container, {
     x: () =>
-      -(container.scrollWidth - document.documentElement.clientWidth - 85) +
+      -(container.scrollWidth - document.documentElement.clientWidth - 20) +
       "px",
     ease: "none",
     duration: 1,
   })
   .to({}, { duration: 1 / (section.length + 1) });
 
-  ScrollTrigger.saveStyles(".section-2, .section-3, .main-section");
+  ScrollTrigger.saveStyles(".about-section, .project-section, .main-section");
 
 
 
