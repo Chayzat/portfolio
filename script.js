@@ -32,7 +32,6 @@ let tl = gsap
     ease: "none",
     duration: 1,
   })
-  .to({}, { duration: 1 / (section.length + 1) });
 
   ScrollTrigger.saveStyles(".about-section, .project-section, .main-section");
 
