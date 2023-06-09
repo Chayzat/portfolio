@@ -1,0 +1,10 @@
+@font-face {
+  font-family: m;
+  src: url(./assets/font/orsay.otf);
+}
+
+
+body {
+  font-family: m;
+  font-size: 2rem;
+}
