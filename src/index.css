@@ -1,10 +1,118 @@
+/*========== Fonts ==========*/
+@import url("https://fonts.googleapis.com/css?family=Playfair:300,regular,500,600,700&display=wrap");
 @font-face {
   font-family: m;
   src: url(./assets/font/orsay.otf);
 }
+:root {
+  --header-height: 3.5rem;
 
+  /*========== Colors ==========*/
+  --text-color: hsl(0, 0%, 0%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
 
+  /*========== Font and typography ==========*/
+  --first-font: "Playfair", sans-serif;
+  --second-font: m, sans-serif;
+  --normal-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-bold: 700;
+  --font-rg: 400;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
 body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+h1,
+h2,
+h3 {
+  color: var(--title-color);
   font-family: m;
-  font-size: 2rem;
+  font-weight: var(--font-bold);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===============-REUSABLE CSS CLASSES-=========================== */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 0 2rem; */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ===============- HEADER -=========================== */
+.header {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.nav__list {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.nav__list a {
+  text-transform: uppercase;
+}
+.info {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: all .3s ease;
+}
+.open {
+  top: 0;
+}
+.hide {
+  top: -100vh;
+}
+.info__content {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  padding: 2rem;
+  background-color: var(--white-color);
+
+}
+.info__content-about {
+}
+.info__content-socials {
+  align-items: end;
+  flex-direction: column;
 }
